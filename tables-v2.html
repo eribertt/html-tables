@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styling your tables</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styling.css"> -->
+    <style type="text/css">
+    body {
+        background-color: rgb(100, 100, 200);
+    }
+
+    table,
+    th,
+    td {
+        font-size: 24px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        /* border collapse will make the table border single line instead of default double */
+    }
+
+    table.eg1,
+    th.eg1,
+    td.eg1 {
+        border: 2px solid red;
+    }
+    /* note above the comma after each class declaration e.g. they must be in place
+otherwise styling of table will not take effect */
+
+    table.eg2,
+    th.eg2,
+    td.eg2 {
+        border: thin dashed black;
+    }
+
+    table.eg3,
+    th.eg3,
+    td.eg3 {
+        border: medium solid yellow;
+        /*border: initial;*/
+        /* initial means (set property to default value) */
+    }
+
+    th.eg4 {
+        width: 25%;
+    }
+
+    th.eg5 {
+        height: 70px;
+    }
+
+    th.eg6 {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <table class="eg1">
+        <tr>
+            <th class="eg1">Names</th>
+            <th class="eg1">Age</th>
+        </tr>
+        <tr>
+            <td class="eg1">Michael</td>
+            <td class="eg1">21</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <table class="eg2">
+        <tr>
+            <th class="eg2">Names</th>
+            <th class="eg2">Age</th>
+        </tr>
+        <tr>
+            <td class="eg2">Michael</td>
+            <td class="eg2">21</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <table class="eg3">
+        <tr>
+            <th class="eg3">Names</th>
+            <th class="eg3">Age</th>
+        </tr>
+        <tr>
+            <td class="eg3">Michael</td>
+            <td class="eg3">21</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>The width of column is decided by the width of the cell with the most content</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Profession</th>
+        </tr>
+        <tr>
+            <td>Michael Fernandes y Mendoza</td>
+            <td>Doctor</td>
+        </tr>
+        <tr>
+            <td>Amy Frank</td>
+            <td>Computer Engineer Master in Front End Development</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>CSS width = 25%. Specifying the width of one cell will affect the whole column. Width is set in percentage relative to the whole table:</p>
+    <table class="eg4">
+        <tr>
+            <th class="eg4">Name</th>
+            <th class="eg4">Profession</th>
+        </tr>
+        <tr>
+            <td class="eg4">Michael Fernandes y Mendoza</td>
+            <td class="eg4">Doctor</td>
+        </tr>
+        <tr>
+            <td class="eg4">Amy Frank</td>
+            <td class="eg4">Computer Engineer Master in Front End Development</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>CSS height = 70px. Specifying the height of one cell will affect the whole row. Height is set in fixed pixels:</p>
+    <table class="eg5">
+        <tr>
+            <th class="eg5">Name</th>
+            <th class="eg5">Profession</th>
+        </tr>
+        <tr>
+            <td class="eg5">Michael Fernandes y Mendoza</td>
+            <td class="eg5">Doctor</td>
+        </tr>
+        <tr>
+            <td class="eg5">Amy Frank</td>
+            <td class="eg5">Computer Engineer Master in Front End Development</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>Specifying 100% for table width will occupy the whole width of the parent element:</p>
+    <table class="eg6">
+        <tr>
+            <th class="eg6">Name</th>
+            <th class="eg6">Profession</th>
+        </tr>
+        <tr>
+            <td class="eg6">Michael Fernandes y Mendoza</td>
+            <td class="eg6">Doctor</td>
+        </tr>
+        <tr>
+            <td class="eg6">Amy Frank</td>
+            <td class="eg6">Computer Engineer Master in Front End Development</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+</body>
+
+</html>
