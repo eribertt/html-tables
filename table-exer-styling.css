@@ -1,0 +1,31 @@
+table,
+th,
+td {
+    font-size: 24px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border collapse will make the table border single line instead of default double */
+}
+
+table.eg1,
+th.eg1,
+td.eg1 {
+    border: 4px solid red;
+}
+
+
+/* note above the comma after each class declaration e.g. they must be in place
+otherwise styling of table will not take effect */
+
+table.eg2,
+th.eg2,
+td.eg2 {
+    border: 4px solid blue;
+}
+
+
+table.eg3,
+th.eg3,
+td.eg3 {
+    border: 4px solid green;
+}
